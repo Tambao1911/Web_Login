@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-image: url(./img/anhnen.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.main {
+    box-shadow: 0px 15px 30px rgb(22, 22, 22);
+    background: linear-gradient(to right top,
+            purple, rgb(187, 7, 142));
+    border-radius: 20px;
+    width: 330px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.border-1 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: inset 0px 15px 25px rgb(104, 102, 102), 0px 5px 15px rgb(114, 113, 113);
+    margin-top: -30px;
+    margin-left: -20px;
+
+}
+
+.border-2 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: inset 0px 15px 25px rgb(104, 102, 102), 0px 5px 15px rgb(114, 113, 113);
+    margin-top: 200px;
+    margin-bottom: -50px;
+    margin-left: 250px;
+}
+
+.content {
+    box-shadow: 0px 15px 15px rgb(22, 22, 22);
+    width: 250px;
+    height: 370px;
+    float: right;
+    margin-top: -90px;
+    background: linear-gradient(to right top,
+            rgb(236, 23, 190), rgb(4, 238, 187));
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.form-text {
+    margin: 32px 0 32px 16px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.form-login {
+    margin: 16px 16px 10px;
+}
+
+
+.form-login_text p {
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 4px;
+    color: #ddd;
+}
+
+.form-login_text input {
+    border: none;
+    height: 28px;
+    width: 170px;
+    background-color: #ccc;
+    outline: none;
+    padding: 0 10px;
+    color: rgb(236, 23, 190);
+}
+
+.form-login__pw-text {
+    position: relative;
+}
+
+.form-login__pw-text p {
+    margin: 8px 0 4px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #ddd;
+    
+}
+
+.form-login__pw-text input {
+    background-color: #ccc;
+    border: none;
+    outline: none;
+    width: 170px;
+    height: 28px;
+    padding: 0 28px 0 10px;
+    color: rgb(236, 23, 190);
+    margin-bottom: 2px;
+}
+
+#tongglePassword {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    font-size: 12px;
+    padding: 8px;
+    transform: translateY(-15%);
+    cursor: pointer;
+}
+
+.form-login__pw-show {
+    margin-top: 10px;
+}
+
+.form-login__pw-show input {
+    cursor: pointer;
+}
+
+.form-login__pw-show span {
+    position: relative;
+    top: -3px;
+    color: #ddd;
+}
+
+.form-help {
+    margin-left: 18px;
+}
+
+.form-help a {
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form-help a:hover {
+    color: rgb(255, 255, 255, 0.2);
+}
+
+.form-icon {
+    text-align: center;
+    margin: 50px 0 0;
+}
+
+.form-icon a {
+    margin: 0 4px;
+    text-decoration: none;
+    color: #e2e2e2;
+}
+
+.form-icon a:hover {
+    color: rgb(255, 255, 255, 0.2);
+}
+
+.form-btn {
+    text-align: center;
+}
+
+.form-btn_icon:active {
+    background-color: rgb(4, 238, 187);
+    color: bisque;
+}
+
+.form-btn_icon {
+    width: 55%;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(236, 23, 190);
+    margin-top: 5px;
+}
+
+.errorMessge {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 6px 0 10px;
+    color: rgb(172, 45, 45);
+}
+
+.loading{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: rgba(0,0,0,.4);
+}
+
+.loading img{
+    width: 30px;
+}
